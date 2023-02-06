@@ -38,10 +38,10 @@ function onItemClick(event) {
     <img src="${event.target.dataset.source}" width="800" height="600">`,
     {
         onShow: modalWindow => {
-            window.addEventListener('keydown', onEscClick)
+            document.addEventListener('keydown', onEscClick)
         },
         onClose: modalWindow => {
-            window.addEventListener('keydown', onEscClick)
+            document.addEventListener('keydown', onEscClick)
         }
     }
     )
